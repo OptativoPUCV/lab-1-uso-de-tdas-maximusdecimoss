@@ -34,3 +34,15 @@ exercises.c:51:7: error: implicit declaration of function 'push_Back'; did you m
 cc1.exe: all warnings being treated as errors
 Compilation failed
 64018b7
+Thu, Mar 20, 2025  1:03:11 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+test.c: In function 'test_crea_lista':
+test.c:61:15: error: implicit declaration of function 'crea_lista'; did you mean 'create_lista'? [-Werror=implicit-function-declaration]
+     List* L = crea_lista();
+               ^~~~~~~~~~
+               create_lista
+test.c:61:15: error: initialization of 'List *' {aka 'struct List *'} from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1ec9267
