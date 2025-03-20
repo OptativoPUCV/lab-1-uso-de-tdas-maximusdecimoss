@@ -98,3 +98,15 @@ Thu, Mar 20, 2025  2:18:56 PM:
  tests:  3|2
 total_score: 40/70
 3f397d7
+Thu, Mar 20, 2025  2:43:27 PM: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:109:7: error: implicit declaration of function 'por'; did you mean 'pop'? [-Werror=implicit-function-declaration]
+       por(P1);
+       ^~~
+       pop
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ec89215
