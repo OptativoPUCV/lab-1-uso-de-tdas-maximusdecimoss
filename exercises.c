@@ -114,6 +114,11 @@ void copia_pila(Stack* P1, Stack* P2) {
       pop(stackAux);
    }
 
+   while(top(stackAux) != NULL) {
+      push(P1, top(stackAux));
+      pop(stackAux);
+   }
+
    free(stackAux);
 
 }
