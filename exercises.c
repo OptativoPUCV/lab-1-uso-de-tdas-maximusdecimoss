@@ -100,9 +100,30 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2){
-   
+void copia_pila(Stack* P1, Stack* P2) {
+   Stack* aux = create_stack();
+
+   while (top(P1) != NULL) {
+      void* element = top(P1);
+      void* elementCopy = malloc(sizeof(int));
+      if (elementCopy == NULL) {
+         exit(1);
+      }
+       *(int*)elementCopy = *(int*)element;
+      push(aux, elementCopy);
+      pop(P1);
+   }
+
+   while (top(aux) != NULL) {
+      void* element = top(aux);
+      push(P1, element);
+      push(P2, element);
+      pop(aux);
+   }
+
+   free(aux);
 }
+
 
 
 /*
