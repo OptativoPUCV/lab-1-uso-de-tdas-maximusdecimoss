@@ -223,3 +223,14 @@ Thu, Mar 20, 2025  4:07:37 PM:
  tests:  4|1
 total_score: 50/70
 477f2db
+Thu, Mar 20, 2025  4:08:14 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:151:8: error: unused variable 'resultado' [-Werror=unused-variable]
+    int resultado = (top(stack) == NULL);
+        ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3c18d5b
