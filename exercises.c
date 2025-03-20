@@ -41,7 +41,7 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
-List* create_list() {
+List* crea_lista() {
    List* L = create_list();
 
    for (int iteration = 1; iteration <= 10; iteration++) {

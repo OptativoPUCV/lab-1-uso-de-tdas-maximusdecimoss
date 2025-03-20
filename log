@@ -66,3 +66,9 @@ test.c:61:15: error: initialization of 'List *' {aka 'struct List *'} from 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 af4d516
+Thu, Mar 20, 2025  1:10:06 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+508cd23
