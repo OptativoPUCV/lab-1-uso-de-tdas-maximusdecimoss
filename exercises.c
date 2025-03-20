@@ -135,7 +135,7 @@ int parentesisBalanceados(char *cadena) {
 
    for (int iteration = 0; cadena[iteration] != '\0'; iteration++) {
       if (cadena[iteration] == '(') {
-         push(stack, NULL);
+         push(stack, (void*)1);
       } else if (cadena[iteration] == ')') {
          if (top(stack) == NULL) {
             free(stack);
@@ -145,13 +145,9 @@ int parentesisBalanceados(char *cadena) {
       }
    }
 
-   if (top(stack) == NULL) {
-      free(stack);
-      return 0;
-   }
-
+   int resultado = (top(stack) == NULL);
    free(stack);
-   return 1;
+   return resultado;
 }
 
 
