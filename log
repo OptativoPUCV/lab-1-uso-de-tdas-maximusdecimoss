@@ -10,3 +10,15 @@ Thu, Mar 20, 2025 12:29:03 PM:
  tests:  0|5
 total_score: 0/70
 4e9d7e9
+Thu, Mar 20, 2025 12:39:32 PM: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:51:7: error: implicit declaration of function 'push_back'; did you mean 'pushBack'? [-Werror=implicit-function-declaration]
+       push_back(L, element);
+       ^~~~~~~~~
+       pushBack
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7636c7b
