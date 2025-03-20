@@ -110,3 +110,9 @@ exercises.c:109:7: error: implicit declaration of function 'por'; did you mean '
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ec89215
+Thu, Mar 20, 2025  2:46:15 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  3|2
+total_score: 40/70
+27bbdf9
