@@ -164,3 +164,9 @@ exercises.c:103:6: note: previous definition of 'copia_pila' was here
       ^~~~~~~~~~
 Compilation failed
 26f5736
+Thu, Mar 20, 2025  3:09:03 PM: 
+ exercises.c | 38 --------------------------------------
+ 1 file changed, 38 deletions(-)
+ tests:  3|2
+total_score: 40/70
+de5248c
