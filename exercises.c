@@ -125,18 +125,17 @@ void copia_pila(Stack* P1, Stack* P2) {
 
    while (top(P1) != NULL) {
       void* element = top(P1);
-      void* elementCopy = malloc(sizeof(int));
-      if (elementCopy == NULL) {
+      void* stackAux = malloc(sizeof(int));
+      if (element == NULL) {
          exit(1);
       }
-      *(int*)elementCopy = *(int*)element;
-      push(stackAux, elementCopy);
+      push(stackAux, element);
       ;
    }
 
    while (top(stackAux) != NULL) {
-      void* element = top(stackAux);
-      push(P2, element);
+      void* element2 = top(stackAux);
+      push(P2, element2);
       pop(stackAux);
    }
 
