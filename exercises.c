@@ -131,7 +131,7 @@ void copia_pila(Stack* P1, Stack* P2) {
       }
       *(int*)elementCopy = *(int*)element;
       push(stackAux, elementCopy);
-      pop(P1);
+      ;
    }
 
    while (top(stackAux) != NULL) {

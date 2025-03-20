@@ -140,3 +140,15 @@ exercises.c:103:6: note: previous definition of 'copia_pila' was here
       ^~~~~~~~~~
 Compilation failed
 df15a8f
+Thu, Mar 20, 2025  2:59:45 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:123:7: error: redefinition of 'copia_pila'
+ }void copia_pila(Stack* P1, Stack* P2) {
+       ^~~~~~~~~~
+exercises.c:103:6: note: previous definition of 'copia_pila' was here
+ void copia_pila(Stack* P1, Stack* P2) {
+      ^~~~~~~~~~
+Compilation failed
+1ff3c3a
