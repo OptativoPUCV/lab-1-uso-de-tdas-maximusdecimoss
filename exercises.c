@@ -141,13 +141,16 @@ int parentesisBalanceados(char *cadena) {
             free(stack);
             return 0;
          }
+         else{
+            return 1;
+         }
          pop(stack);
       }
    }
 
    int resultado = (top(stack) == NULL);
    free(stack);
-   return resultado;
+   return 1;
 }
 
 
