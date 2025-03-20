@@ -234,3 +234,9 @@ exercises.c:151:8: error: unused variable 'resultado' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3c18d5b
+Thu, Mar 20, 2025  4:08:45 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+cde21b2

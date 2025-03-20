@@ -150,7 +150,7 @@ int parentesisBalanceados(char *cadena) {
 
    int resultado = (top(stack) == NULL);
    free(stack);
-   return 1;
+   return resultado;
 }
 
 
