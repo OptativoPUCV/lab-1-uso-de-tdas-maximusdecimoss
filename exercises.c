@@ -109,7 +109,7 @@ void copia_pila(Stack* P1, Stack* P2) {
       void* element = top(P1);
       
       push(stackAux, element);
-      pop(P1);
+      
    }
 
    while(top(stackAux) != NULL) {
@@ -120,7 +120,29 @@ void copia_pila(Stack* P1, Stack* P2) {
 
    free(stackAux);
 
+}void copia_pila(Stack* P1, Stack* P2) {
+   Stack* stackAux = create_stack();
+
+   while (top(P1) != NULL) {
+      void* element = top(P1);
+      void* elementCopy = malloc(sizeof(int));
+      if (elementCopy == NULL) {
+         exit(1);
+      }
+      *(int*)elementCopy = *(int*)element;
+      push(stackAux, elementCopy);
+      pop(P1);
+   }
+
+   while (top(stackAux) != NULL) {
+      void* element = top(stackAux);
+      push(P2, element);
+      pop(stackAux);
+   }
+
+   free(stackAux);
 }
+
 
 /*
 Ejercicio 5.
