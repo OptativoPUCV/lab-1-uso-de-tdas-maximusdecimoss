@@ -133,11 +133,13 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena) {
    Stack* stack = create_stack();
    int i = 0;
+
    while (cadena[i] != '\0') {
       if (cadena[i] == '(') {
-         push(stack, &cadena[i]);
+         push(stack, NULL);  // No es necesario almacenar la dirección de los caracteres
       } else if (cadena[i] == ')') {
          if (top(stack) == NULL) {
+            free(stack);  // Liberamos la memoria de la pila antes de salir
             return 0;
          } else {
             pop(stack);
@@ -145,12 +147,12 @@ int parentesisBalanceados(char *cadena) {
       }
       i++;
    }
-   if (top(stack) == NULL) {
-      return 1;
-   } else {
-      return 0;
-   }
+
+   int resultado = (top(stack) == NULL) ? 1 : 0;  // Si la pila está vacía, está balanceado
+   free(stack);  // Liberamos la memoria de la pila al final
+   return resultado;
 }
+
 
 
 
