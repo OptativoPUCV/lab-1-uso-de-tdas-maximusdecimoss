@@ -72,3 +72,13 @@ Thu, Mar 20, 2025  1:10:06 PM:
  tests:  1|4
 total_score: 10/70
 508cd23
+Thu, Mar 20, 2025  1:19:06 PM: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:64:18: error: expected expression before ';' token
+    int sumList = ;
+                  ^
+Compilation failed
+759e361
