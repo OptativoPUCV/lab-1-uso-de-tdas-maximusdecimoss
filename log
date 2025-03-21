@@ -309,3 +309,9 @@ exercises.c:134:19: error: initialization of 'Stack *' {aka 'struct List *'} fro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 96c4ea1
+Thu, Mar 20, 2025 10:45:59 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|0
+total_score: 70/70
+67ee546
