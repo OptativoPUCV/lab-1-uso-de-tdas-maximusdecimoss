@@ -296,3 +296,16 @@ exercises.c:134:19: error: initialization of 'Stack *' {aka 'struct List *'} fro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d504049
+Thu, Mar 20, 2025 10:45:30 PM: 
+ exercises.c | 16 ++++------------
+ 1 file changed, 4 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:19: error: implicit declaration of function 'create_Stack'; did you mean 'create_stack'? [-Werror=implicit-function-declaration]
+    Stack* stack = create_Stack();
+                   ^~~~~~~~~~~~
+                   create_stack
+exercises.c:134:19: error: initialization of 'Stack *' {aka 'struct List *'} from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+96c4ea1
